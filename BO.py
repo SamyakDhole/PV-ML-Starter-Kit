@@ -35,7 +35,7 @@ def BO_optimizer(df, number_of_predictions, type_of_optimization):
                                      domain=bds,
                                      constraints=None,
                                      model_type='GP',  # gaussian process model
-                                     acquisition_type='LCB',  # expected improvement acquisition
+                                     acquisition_type='EI',  # expected improvement acquisition
                                      acquisition_jitter=0.,  # tune to adjust exploration
                                      X=X,  # normalized parameter value data
                                      Y=Y.reshape(Y.shape[0], 1),
